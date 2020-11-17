@@ -4,7 +4,9 @@ import styles from "./footer.module.scss";
 const Footer: React.FC<{ pagesTotalCount: number; pageCurrentNumber: number }> = (props) => {
   return (
     <footer className={styles.root}>
-      {props.pageCurrentNumber}/{props.pagesTotalCount}
+      {props.pageCurrentNumber}
+      {" / "}
+      {props.pagesTotalCount}
     </footer>
   );
 };
